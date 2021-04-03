@@ -32,7 +32,7 @@ const lineClient = new Client({
 // Init Masterchef
 const web3Service = new Web3Service();
 const priceService = new PriceService();
-const masterchefAddress = "0x73feaa1eE314F8c655E354234017bE2193C9E24E";
+const masterchefAddress = "0xde866dD77b6DF6772e320dC92BFF0eDDC626C674";
 const contract = web3Service.getContract(MasterChef.abi, masterchefAddress);
 const helper = new TokenHelper(web3Service, priceService);
 const masterchef = new Masterchef(contract, helper);
