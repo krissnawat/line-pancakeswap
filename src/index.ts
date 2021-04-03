@@ -22,11 +22,11 @@ import { pools } from "./constants/pools";
 // Init Express
 const app = express();
 app.use(bodyParser.json());
-const port = process.env.PORT || 3000;
+const port = 8080;
 
 // Init LINE SDK
 const lineClient = new Client({
-  channelAccessToken: process.env.LINE_CHANNEL_ACCESS_TOKEN,
+  channelAccessToken: '3urvdX0loGGQ3BxpF79KNDbJ8/3UbNtGXJhEBG3uXOV38uAA7HxpuoTVxb2qHe+hNW2oQvL/TGBI2YoXlUyK5VcS/TcAovkILAH6lGOGQCsnWDd6gTiIxo4DvzolgPe209j+azJpRBBdxRz+A1sV0gdB04t89/1O/w1cDnyilFU=',
 });
 
 // Init Masterchef
